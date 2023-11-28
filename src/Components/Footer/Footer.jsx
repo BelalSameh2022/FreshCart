@@ -1,12 +1,12 @@
 import React from 'react';
-import Style from './Footer.module.css';
+import './Footer.css';
 
-// import applestore from '../../assets/images/apple-store.png';
-// import googlestore from '../../assets/images/google-store.png';
-// import amazonpay from '../../assets/images/amazon-pay.png';
-// import americanexpress from '../../assets/images/american-express.png';
-// import mastercard from '../../assets/images/mastercard.png';
-// import paypal from '../../assets/images/paypal.png';
+import amazonpay from '../../assets/images/footer1.png';
+import americanexpress from '../../assets/images/footer2.png';
+import mastercard from '../../assets/images/footer3.png';
+import paypal from '../../assets/images/footer4.png';
+import applestore from '../../assets/images/footer5.png';
+import googlestore from '../../assets/images/footer6.png';
 
 
 export default function Footer() {
@@ -24,21 +24,21 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='row g-3 border-bottom p-4 mb-3'>
-                    <div className='col-md-6'>
-                        <h6 className='mb-0'>Payment Partners</h6>
-                        <div>
-                            {/* <img src={amazonpay} alt="amazon-pay" className='w-25' />
-                            <img src={americanexpress} alt="american-express" className='w-25' />
-                            <img src={mastercard} alt="master-card" className='w-25' />
-                            <img src={paypal} alt="pay-pal" className='w-25' /> */}
+                    <div className='col-md-6 template'>
+                        <h6 className='mb-0 me-1'>Payment Partners</h6>
+                        <div className='img-container1'>
+                            <img src={amazonpay} alt="amazon-pay" />
+                            <img src={americanexpress} alt="american-express" />
+                            <img src={mastercard} alt="master-card" />
+                            <img src={paypal} alt="pay-pal" />
                         </div>
 
                     </div>
-                    <div className='col-md-6'>
-                        <h6 className='mb-0'>Get deliveries with FreshCart</h6>
-                        <div>
-                            {/* <img src={applestore} alt="apple-store" className='w-25' />
-                            <img src={googlestore} alt="google-store" className='w-25' /> */}
+                    <div className='col-md-6 template'>
+                        <h6 className='mb-0 me-1'>Get deliveries with FreshCart</h6>
+                        <div className='img-container2'>
+                            <img src={applestore} alt="apple-store" />
+                            <img src={googlestore} alt="google-store" />
                         </div>
                     </div>
                 </div>
