@@ -1,0 +1,163 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap');
+
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, .2) 0px 2px 4px -1px, rgba(145, 158, 171, .14) 0px 4px 5px 0px, rgba(145, 158, 171, .12) 0px 1px 10px 0px;
+  --main-shadow: 1px 1px 10px #4fa74f;
+  --font-family: 'Encode Sans Expanded', sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999999;
+  background-color: #fff;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.navbar {
+  padding: 0.7rem 0;
+}
+
+
+
+.my-badge {
+  position: absolute;
+  top: 10%;
+  left: calc(100% - 5px);
+  transform: translate(-50%, -50%);
+  font-size: x-small;
+}
+
+@media (max-width: 576px) {
+  .my-badge {
+    top: 55%;
+    left: calc(100% - 12px);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mt-shift {
+  margin-top: 5rem !important;
+}
+
+.min-vh {
+  min-height: calc(55vh - 5rem);
+}
+
+.network-fail {
+  background-color: #fff;
+  position: fixed;
+  top: 70px;
+  right: 30px;
+  padding: 20px 30px;
+  z-index: 99999;
+  box-shadow: var(--shadow);
+}
+
+.fs-7 {
+  font-size: 0.8rem !important;
+}
+
+.btn-count {
+  border: 1px solid var(--main-color);
+  padding: 1px 8px;
+  border-radius: 8px;
+}
+
+.btn-count:hover {
+  border: 1px solid var(--main-color);
+  background-color: var(--light-color);
+}
+
+.btn-remove {
+  padding: 1px 8px 1px 0;
+}
+
+.btn-close {
+  position: absolute;
+  left: 94%;
+  top: -28px;
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: grab;
+}
+
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.product:hover {
+  box-shadow: var(--main-shadow);
+  border: 1px solid var(--main-color) !important;
+  transition: all 0.5s;
+}
+
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+
+}
+
+.btn-main {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--main-color);
+  --bs-btn-border-color: var(--main-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #109910;
+  --bs-btn-hover-border-color: #0d860d;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #0d860d;
+  --bs-btn-active-border-color: #097309;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--main-color);
+  --bs-btn-disabled-border-color: var(--main-color);
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.text-main {
+  color: var(--main-color);
+}
+
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
